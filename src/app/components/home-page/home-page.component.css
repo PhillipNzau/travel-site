@@ -31,3 +31,13 @@
   font-size: 55px;
   font-weight: bolder;
 }
+.tours{
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+}
+.tours-title-container{
+  padding: 25px;
+}
+.tours-subtitle{
+  font-size: small;
+}
