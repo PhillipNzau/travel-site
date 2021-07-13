@@ -12,7 +12,6 @@ export class NavBarComponent implements OnInit {
   // tslint:disable-next-line:typedef
   onWindowScroll() {
     const element =  document.querySelector('.navbar') as HTMLElement;
-    const element2 =  document.querySelector('.navbar-toggler') as HTMLElement;
     if (window.pageYOffset > 2) {
       element.classList.add('bg-dark');
       // element.classList.remove('bg-darks');
