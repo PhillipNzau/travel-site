@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  --main-bg-color: #121C20;
+  --main-font: 'Open Sans', sans-serif;
+  --main-font-color: #FFFFFF;
+  --secondary-font-color: #BFBD31;
+  --secondary-color: #707531;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--main-bg-color);
+}
+section, html{
+  background-color: var(--main-bg-color);
+}
