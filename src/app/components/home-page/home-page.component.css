@@ -4,7 +4,6 @@
   width: 100%;
 }
 .header-bg-img {
-  /*background-image: url("https://images.unsplash.com/photo-1526723476341-307183286978?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFkdmVudHVyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");*/
   background-image: url("https://images.unsplash.com/photo-1578952258885-6ee0651294e6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,18 +11,17 @@
   height: 100%;
   position: relative;
   /* Add the blur effect */
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 .header-text-container {
   padding: 20px;
   margin: 0 auto;
-  /*border: 1px solid black;*/
   font-family: var(--main-font);
   color: var(--main-font-color);
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -69,13 +67,7 @@
   /*animation-duration: 60s;*/
   animation-iteration-count: infinite;
 }
-/*.list-group-item:hover{*/
-/*  animation-play-state: paused;*/
-/*}*/
-.list-group-item:hover{
-  background-color: #707531;
-  cursor: pointer;
-}
+
 @keyframes mymove {
   from {right: 0px;}
   to {right: 900px;}
@@ -86,5 +78,15 @@
 .tours-slider-content {
   background-color: var(--secondary-color);
   opacity: 0.8;
-
+}
+.tours-pin-icon{
+  font-size: 15px;
+  padding: 1px ;
+  color: var(--main-font-color);
+}
+.tours-title {
+  font-size: 25px;
+  font-family: var(--main-font);
+  padding: 8px 0 0 0;
+  color: var(--main-font-color);
 }

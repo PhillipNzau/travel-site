@@ -7,6 +7,10 @@
   --secondary-font-color: #BFBD31;
   --secondary-color: #707531;
 }
+h1,h2,h3,h4,h5,h6{
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+}
 body{
   margin: 0;
   padding: 0;
