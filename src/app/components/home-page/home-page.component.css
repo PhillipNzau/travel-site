@@ -41,3 +41,50 @@
 .tours-subtitle{
   font-size: small;
 }
+.tours-slider {
+  overflow-y: hidden;
+  margin: 0 20px 0 20px;
+}
+.tours-slider > div {
+  background-color: var(--main-bg-color);
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.tours-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tours-slider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.list-group-item{
+  animation: mymove 25s;
+  /*animation-delay: 1s;*/
+  /*animation-duration: 60s;*/
+  animation-iteration-count: infinite;
+}
+/*.list-group-item:hover{*/
+/*  animation-play-state: paused;*/
+/*}*/
+.list-group-item:hover{
+  background-color: #707531;
+  cursor: pointer;
+}
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 900px;}
+}
+.tours-slider-image {
+  position: relative;
+}
+.tours-slider-content {
+  background-color: var(--secondary-color);
+  opacity: 0.8;
+
+}
