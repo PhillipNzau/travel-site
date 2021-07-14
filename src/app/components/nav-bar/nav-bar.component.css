@@ -1,3 +1,14 @@
 .navbar {
-  background: transparent;
+  z-index:2;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  /*background-color: #707531;*/
+  border: none;
+}
+.navbar-toggler-icon {
+  border: none !important;
 }
