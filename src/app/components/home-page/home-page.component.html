@@ -15,78 +15,24 @@
     <h3 class="tours-title">The Wonders Of Nature</h3>
     <h6 class="tours-subtitle">We provide authentic content for travelers around the world</h6>
   </div>
-  <div class="tours-slider list-group list-group-horizontal">
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
+  <carousel [arrows]="false" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" [height]="320" >
+    <div class="carousel-cell" *ngFor="let n of numSeq(8)">
+      <div class="carousel-image">
         <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill1</div>
+      </div>
+      <div class="tours-slider-content ">
+        <div class="slider-content-title">
+          <div class="bd-highlight">
+            <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
           </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
+          <div class="bd-highlight tours-title">Camel Hill5</div>
+        </div>
+        <div class="slider-content-subtitle">
+          <h6 class="tours-subtitle pb-2 pt-2 text-center">We provide authentic content for travelers around the world</h6>
         </div>
       </div>
     </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill2</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill3</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill4</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill5</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+  </carousel>
 </section>
 <!--end tours section-->
 

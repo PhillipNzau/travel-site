@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {IconsModule} from './components/icons/icons.module';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {IconsModule} from './components/icons/icons.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IconsModule
+    IconsModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
