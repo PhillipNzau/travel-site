@@ -109,6 +109,55 @@
 .tours-img{
   margin: 25px;
 }
+
+/*Gallery section*/
+.gallery {
+
+}
+.gallery-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-btn {
+  width: 150px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--main-font-color);
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
 /*Footer section*/
 .footer {
   background-image: url("https://images.unsplash.com/photo-1495781856580-b3c4e8d21bf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");

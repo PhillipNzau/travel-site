@@ -47,10 +47,9 @@
       <h3 class="reason-title">The Wonders Of Nature</h3>
       <h6 class="reason-subtitle">We provide authentic content for travelers around the world</h6>
     </div>
-    <div class="main-reason-div mt-4"><div class="secondary-reason-div"></div></div>
-
   </div>
 </section>
+<div class="main-reason-div mt-4"><div class="secondary-reason-div"></div></div>
 <!--end why-us section-->
 
 <!--why-us section-->
@@ -67,7 +66,22 @@
 
 <!--gallery section-->
 <section class="gallery">
+  <div class="gallery-book">
+    <button class="btn gallery-btn">
+      Book Now
+    </button>
+  </div>
+  <div class="gallery-view">
+    <div class="row">
+<!--      <div class="view-box column" *ngFor="let n of numSeq(8)">-->
+      <div class="view-box column" *ngFor="let n of numSeq(4)">
+        <div *ngFor="let n of dimSeq(8)">
+          <img src="https://picsum.photos/{{width}}/{{height}}" alt="Fetching" style="width:100%">
+        </div>
+      </div>
 
+    </div>
+  </div>
 </section>
 <!--end gallery section-->
 
