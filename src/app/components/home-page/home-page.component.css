@@ -118,6 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 25px;
 }
 .gallery-btn {
   width: 150px;
@@ -130,9 +131,9 @@
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  max-height: 500px;
-  overflow: hidden;
+  max-height: 600px;
+  overflow-y: scroll;
+  padding: 25px;
 }
 
 /* Create four equal columns that sits next to each other */
