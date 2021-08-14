@@ -126,6 +126,9 @@
   background-color: var(--secondary-color);
   color: var(--main-font-color);
 }
+.gallery-view {
+  padding: 25px;
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -133,7 +136,7 @@
   flex-wrap: wrap;
   max-height: 600px;
   overflow-y: scroll;
-  padding: 25px;
+  /*padding: 25px;*/
 }
 
 /* Create four equal columns that sits next to each other */
@@ -158,8 +161,19 @@
     max-width: 50%;
   }
 }
-
-/*Footer section*/
+/*About section*/
+.about {
+  padding: 25px;
+}
+.about-blog-container {
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
+}
+.blog-container-text {
+  color: var(--main-font-color);
+}
+/*F1ooter section*/
 .footer {
   background-image: url("https://images.unsplash.com/photo-1495781856580-b3c4e8d21bf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
