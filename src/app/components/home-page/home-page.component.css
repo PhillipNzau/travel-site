@@ -29,55 +29,26 @@
   font-size: 55px;
   font-weight: bolder;
 }
+
+/*tours section*/
 .tours{
   font-family: var(--main-font);
   color: var(--main-font-color);
-}
-.tours-title-container{
   padding: 25px;
+
 }
 .tours-subtitle{
   font-size: small;
 }
-.tours-slider {
-  overflow-y: hidden;
-  margin: 0 20px 0 20px;
-}
-.tours-slider > div {
-  background-color: var(--main-bg-color);
-  width: 100%;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-/* Hide scrollbar for Chrome, Safari and Opera */
-.tours-slider::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.tours-slider {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.slider-list-item{
-  animation: mymove 25s;
-  /*animation-delay: 1s;*/
-  /*animation-duration: 60s;*/
-  animation-iteration-count: infinite;
-}
-
-@keyframes mymove {
-  from {right: 0px;}
-  to {right: 900px;}
-}
-.tours-slider-image {
-  position: relative;
-}
 .tours-slider-content {
   background-color: var(--secondary-color);
+  padding:0 10px 0 10px;
   opacity: 0.8;
+}
+.slider-content-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .tours-pin-icon{
   font-size: 15px;
@@ -87,10 +58,12 @@
 .tours-title {
   font-size: 25px;
   font-family: var(--main-font);
-  padding: 8px 0 0 0;
   color: var(--main-font-color);
 }
-
+  /*why-us section*/
+.why-us {
+  padding: 25px;
+}
 .reason-title {
   font-size: 25px;
   font-family: var(--main-font);
@@ -133,34 +106,111 @@
 .tours-img{
   margin: 25px;
 }
+
+/*Gallery section*/
+.gallery-book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+.gallery-btn {
+  width: 150px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--main-font-color);
+}
+.gallery-view {
+  padding: 25px;
+  overflow-y: scroll;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  max-height: 600px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.columns {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .columns {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 25px;
+  }
+}
+/*About section*/
+.about {
+  padding: 25px;
+}
+.about-blog-container {
+  padding: 10px 10px 15px 10px;
+}
+.blog-container-text {
+  color: var(--main-font-color);
+}
+.blog-container-text > svg {
+  fill: var(--main-font-color);
+ }
+
+.blog-order-1 {
+  order: 1;
+}
+
 /*Footer section*/
 .footer {
   background-image: url("https://images.unsplash.com/photo-1495781856580-b3c4e8d21bf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
-  /* Add the blur effect */
-  /*filter: blur(2px);*/
-  /*-webkit-filter: blur(2px);*/
-  /*filter: grayscale(30%);*/
+  padding: 25px;
 }
-.footer-list-item {
+.footer-container {
+  padding: 15px;
+}
+.table {
   background-color: transparent;
-  /*margin-top: ;*/
-  margin-top: 60px;
+  margin-top: 25px;
   border: none;
   font-size: 10px;
   color: var(--main-font-color);
   font-family: var(--main-font);
 }
-.footer-link-title {
-  font-size: 16px;
+.table thead > tr > th {
+  font-size: 15px;
   font-weight: bolder;
-  padding-bottom: 6px;
 }
-.footer-link-subtitle {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.table tbody > tr > td > a {
+  text-decoration: none;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
 }

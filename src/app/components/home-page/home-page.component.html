@@ -15,78 +15,25 @@
     <h3 class="tours-title">The Wonders Of Nature</h3>
     <h6 class="tours-subtitle">We provide authentic content for travelers around the world</h6>
   </div>
-  <div class="tours-slider list-group list-group-horizontal">
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
+  <carousel [arrows]="false" [loop]="true" [autoplay]="true" [autoplayInterval]="3000" [height]="320">
+    <div class="carousel-cell" *ngFor="let n of numSeq(8)">
+      <div class="carousel-image">
         <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill1</div>
+      </div>
+      <div class="tours-slider-content ">
+        <div class="slider-content-title">
+          <div class="bd-highlight">
+            <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
           </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
+          <div class="bd-highlight tours-title">Camel Hill5</div>
+        </div>
+        <div class="slider-content-subtitle">
+          <h6 class="tours-subtitle pb-2 pt-2 text-center">We provide authentic content for travelers around the
+            world</h6>
         </div>
       </div>
     </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill2</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill3</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill4</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-    <div class="slider-list-item list-group-item">
-      <div class="tours-slider-image">
-        <img src="https://picsum.photos/200" alt="Fetching">
-        <div class="tours-slider-content ">
-          <div class="d-flex flex-row bd-highlight ps-2">
-            <div class="bd-highlight">
-              <i-feather class="tours-pin-icon" name="map-pin"></i-feather>
-            </div>
-            <div class="bd-highlight tours-title">Camel Hill5</div>
-          </div>
-          <h6 class="tours-subtitle pb-2">We provide authentic content for travelers around the world</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+  </carousel>
 </section>
 <!--end tours section-->
 
@@ -101,10 +48,11 @@
       <h3 class="reason-title">The Wonders Of Nature</h3>
       <h6 class="reason-subtitle">We provide authentic content for travelers around the world</h6>
     </div>
-    <div class="main-reason-div mt-4"><div class="secondary-reason-div"></div></div>
-
   </div>
 </section>
+<div class="main-reason-div mt-4">
+  <div class="secondary-reason-div"></div>
+</div>
 <!--end why-us section-->
 
 <!--why-us section-->
@@ -113,7 +61,9 @@
     <h3 class="tours-title">Here's what makes a vacation perfect!</h3>
     <div class="travels-underline-div"></div>
     <h6 class="tours-subtitle">
-      Whether you're planning a family vacation with your pet, a relaxing getaway, or an adventurous excursion, vacation rentals are ideal for trips of all types. You can find everything from charming mountain cabins and lakeside lodge to breathtaking waterfall front tents.
+      Whether you're planning a family vacation with your pet, a relaxing getaway, or an adventurous excursion, vacation
+      rentals are ideal for trips of all types. You can find everything from charming mountain cabins and lakeside lodge
+      to breathtaking waterfall front tents.
     </h6>
   </div>
 </section>
@@ -121,39 +71,73 @@
 
 <!--gallery section-->
 <section class="gallery">
-
+  <div class="gallery-book">
+    <button class="btn gallery-btn">
+      Book Now
+    </button>
+  </div>
+  <div class="gallery-view row">
+    <div class="view-box column" *ngFor="let n of numSeq(4)">
+      <div *ngFor="let m of myObjSliced">
+        <img src="https://picsum.photos/{{m.width}}/{{m.height}}" alt="Fetching" style="width:100%">
+      </div>
+    </div>
+  </div>
 </section>
 <!--end gallery section-->
 
 <!--about section-->
 <section class="about">
-
+  <h3 class="tours-title">Our Tour Blog</h3>
+  <div class="travels-underline-div"></div>
+  <div class="about-blog-container row" *ngFor="let n of numSeq(7); index as i">
+    <div class="blog-container-text column" [class.blog-order-1]="i % 2 !== 0">
+      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+        <path
+          d="M9 3c-5.252 1.039-9 4.905-9 10.609v7.391h9.983v-10h-3.983c0-2.211 1.563-4.932 3.996-5.849l-.996-2.151zm14 0c-5.252 1.039-8.983 4.905-8.983 10.609v7.391h9.983v-10h-4c0-2.211 1.563-4.932 3.995-5.849l-.995-2.151zm-.567 1.156l.241.52c-2.394 1.391-3.674 4.159-3.674 6.324v1h4v8h-7.983v-6.391c0-4.687 2.82-8.248 7.416-9.453m-14-.001l.241.521c-2.394 1.391-3.674 4.159-3.674 6.324v1h3.983v8h-7.983v-6.391c0-4.686 2.827-8.247 7.433-9.454"/>
+      </svg>
+      <p class="pt-3">We seek to provide the authentic content for travellers around the world. Find hosts and guests
+        everywhere in the world</p>
+      <button class="btn gallery-btn">Learn More</button>
+    </div>
+    <div class="blog-container-img column">
+      <img src="https://picsum.photos/500" alt="Fetching" style="height: 100%">
+    </div>
+  </div>
 </section>
 <!--end about section-->
 
 <!--footersection-->
 <section class="footer">
-  <div class="list-group list-group-horizontal">
-    <div class="footer-list-item list-group-item row">
-      <div class="col footer-link-title">Information</div>
-      <div class="col footer-link-subtitle">Adventure</div>
-      <div class="col footer-link-subtitle">Book Now</div>
-      <div class="col footer-link-subtitle">About</div>
-      <div class="col footer-link-subtitle">Blog</div>
-    </div>
-    <div class="footer-list-item list-group-item row">
-      <div class="col footer-link-title">Quick Links</div>
-      <div class="col footer-link-subtitle">Tours</div>
-      <div class="col footer-link-subtitle">Supports</div>
-      <div class="col footer-link-subtitle">Privacy</div>
-      <div class="col footer-link-subtitle">Affiliates</div>
-    </div>
-    <div class="footer-list-item list-group-item row">
-      <div class="col footer-link-title">Contacts</div>
-      <div class="col footer-link-subtitle">Luthuli Street, Kenya</div>
-      <div class="col footer-link-subtitle">+254365848</div>
-      <div class="col footer-link-subtitle">travel@gmail.com</div>
-    </div>
-  </div>
+  <table class="table table-borderless">
+    <thead>
+    <tr>
+      <th>Information</th>
+      <th>Quick Links</th>
+      <th>Contacts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="">Adventure</a></td>
+      <td><a href="">Tours</a></td>
+      <td><a href="">Luthuli Street, Kenya</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Book Now</a></td>
+      <td><a href="">Supports</a></td>
+      <td><a href="">+254365848</a></td>
+    </tr>
+    <tr>
+      <td><a href="">About</a></td>
+      <td><a href="">Privacy</a></td>
+      <td><a href="">travel@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Blog</a></td>
+      <td><a href="">Affiliates</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 <!--end footer section-->

@@ -11,12 +11,19 @@ h1,h2,h3,h4,h5,h6{
   color: var(--main-font-color);
   font-family: var(--main-font);
 }
+a {
+  text-decoration: none;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+}
 body{
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: var(--main-bg-color);
+  overflow-x: hidden;
 }
-section, html{
-  background-color: var(--main-bg-color);
+html, body{
+  background-color: var(--main-bg-color) !important;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
 }
