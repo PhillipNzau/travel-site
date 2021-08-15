@@ -37,9 +37,6 @@
   padding: 25px;
 
 }
-.tours-title-container{
-  /*padding: 25px;*/
-}
 .tours-subtitle{
   font-size: small;
 }
@@ -111,9 +108,6 @@
 }
 
 /*Gallery section*/
-.gallery {
-
-}
 .gallery-book {
   display: flex;
   align-items: center;
@@ -136,8 +130,6 @@
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   max-height: 600px;
-  /*overflow-y: scroll;*/
-  /*padding: 25px;*/
 }
 
 /* Create four equal columns that sits next to each other */
@@ -179,9 +171,6 @@
   padding: 25px;
 }
 .about-blog-container {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: space-between;*/
   padding: 10px 10px 15px 10px;
 }
 .blog-container-text {
@@ -195,7 +184,7 @@
   order: 1;
 }
 
-/*F1ooter section*/
+/*Footer section*/
 .footer {
   background-image: url("https://images.unsplash.com/photo-1495781856580-b3c4e8d21bf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
   background-size: cover;
@@ -203,14 +192,14 @@
   width: 100%;
   height: 250px;
   overflow: hidden;
-  padding: 10px;
+  padding: 25px;
 }
 .footer-container {
   padding: 15px;
 }
 .table {
   background-color: transparent;
-  margin-top: 40px;
+  margin-top: 25px;
   border: none;
   font-size: 10px;
   color: var(--main-font-color);
